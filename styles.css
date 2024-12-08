@@ -1,0 +1,116 @@
+#solar-system-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+#solar-system {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    background-color: transparent;
+}
+
+.orbit {
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.celestial-body {
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 0.1s, top 0.1s;
+}
+
+.planet-label {
+    color: white;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+#controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 300px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+    .control-btn:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+.speed-control, .zoom-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#speedSlider, #zoomSlider {
+    flex-grow: 1;
+}
+
+.date-input {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#currentDate {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#debug {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 12px;
+    max-height: 80vh;
+    overflow-y: auto;
+    min-width: 300px;
+}
