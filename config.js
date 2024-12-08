@@ -16,7 +16,7 @@ const SUN_COLOR = '#FFD700';
 const ORBIT_COLOR = 'rgba(255, 255, 255, 0.2)';
 
 // Default states
-const DEFAULT_ZOOM_LEVEL = 0.4;
+const DEFAULT_ZOOM_LEVEL = 1.0;
 const DEFAULT_SPEED_MULTIPLIER = 1;
 
 // Planet size multipliers
