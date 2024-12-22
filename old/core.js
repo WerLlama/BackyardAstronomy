@@ -51,8 +51,8 @@ function updateDebugInfo() {
         const orbitProgress = (daysSinceStart / data.periodDays) * 360;
         const currentAngle = (data.horizonsData.longitude + orbitProgress) % 360;
         debugText += `${name}:\n`;
-        debugText += `  Base Longitude: ${data.horizonsData.longitude.toFixed(2)}°\n`;
-        debugText += `  Current Angle: ${currentAngle.toFixed(2)}°\n`;
+        debugText += `  Base Longitude: ${data.horizonsData.longitude.toFixed(2)}Â°\n`;
+        debugText += `  Current Angle: ${currentAngle.toFixed(2)}Â°\n`;
         debugText += `  Distance: ${data.horizonsData.distance.toFixed(3)} AU\n\n`;
     });
     debug.textContent = debugText;
